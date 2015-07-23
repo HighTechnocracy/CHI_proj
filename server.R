@@ -6,28 +6,28 @@ shinyServer(
         function(input, output) {
                 output$map <- renderPlot({
                         data <- switch(input$var, 
-                                       "Percent White" = counties$white,
-                                       "Percent Black" = counties$black,
-                                       "Percent Hispanic" = counties$hispanic,
-                                       "Percent Hispanic" = counties$hispanic,
-                                       "Percent Hispanic" = counties$hispanic,
-                                       "Percent Asian" = counties$asian)
+                                       "Total Population" = counties$value,
+                                       "Population per sq.mi." = counties$value,
+                                       "Under 18" = counties$value,
+                                       "Working Age" = counties$value,
+                                       "Women of Child-bearing Age" = counties$value,
+                                       "Over 65" = counties$value)
                         
                         color <- switch(input$var, 
-                                        "Percent White" = "darkgreen",
-                                        "Percent Black" = "black",
-                                        "Percent Hispanic" = "darkorange",
-                                        "Percent Hispanic" = "darkorange",
-                                        "Percent Hispanic" = "darkorange",
-                                        "Percent Asian" = "darkviolet")
+                                        "Total Population" = "darkgreen",
+                                        "Population per sq.mi." = "black",
+                                        "Under 18" = "darkorange",
+                                        "Working Age" = "darkorange",
+                                        "Women of Child-bearing Age" = "darkorange",
+                                        "Over 65" = "darkviolet")
                         
                         legend <- switch(input$var, 
-                                         "Percent White" = "% White",
-                                         "Percent Black" = "% Black",
-                                         "Percent Hispanic" = "% Hispanic",
-                                         "Percent Hispanic" = "% Hispanic"
-                                         "Percent Hispanic" = "% Hispanic"
-                                         "Percent Asian" = "% Asian")
+                                         "Total Population" = "Total Population",
+                                         "Population per sq.mi." = "Pop. per square mile",
+                                         "Under 18" = "Population under age 18",
+                                         "Working Age" = "Working Age Pop. (18-64)"
+                                         "Women of Child-bearing Age" = "Number of Women of Child-Bearing Age, (15-44)"
+                                         "Over 65" = "Population over 65")
                         
                         percent_map(var = data, 
                                     color = color, 
