@@ -3,18 +3,16 @@ shinyUI(fluidPage(
         
         sidebarLayout(
                 sidebarPanel(
-                        helpText("Create demographic maps with 
-                                 information from the 2010 US Census."),
+                        helpText("Create demographic maps with information from the Colorado Health Institute's Local Data Worksheets"),
                         
                         selectInput("var", 
                                     label = "Choose a variable to display",
-                                    choices = c("Percent White", "Percent Black",
-                                                "Percent Hispanic", "Percent Asian"),
-                                    selected = "Percent White"),
+                                    choices = c("Total Population", "Population per Square Mile", "Under 18",
+                                                "Working Age", "Women of Child-bearing Age", "Over 65"),
+                                    selected = "Total Population"),
                         
-                        sliderInput("range", 
-                                    label = "Range of interest:",
-                                    min = 0, max = 100, value = c(0, 100))
+                        selectInput("region", 
+                                    label = "Region of interest:")
                         ),
                 
                 mainPanel(plotOutput("map"))
