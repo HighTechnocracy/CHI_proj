@@ -1,12 +1,16 @@
 library(shiny)
 library(choroplethrMaps)
 
-data(df_county_demographics, package="choroplethr")
-demographic_choices = colnames(df_county_demographics)[2:ncol(df_county_demographics)]
+df_county_demographics <- read.csv("CHIdata2.csv")
+for (i in 2:45) {
+        df_county_demographics[,i] = as.numeric(df_county_demographics[,i])
+}
+
+demographic_choices = colnames(df_county_demographics)[3:ncol(df_county_demographics)]
 
 shinyUI(fluidPage(
 
-  titlePanel("Colorado Census Explorer"),
+  titlePanel("Colorado Health Institute County Data Workbooks VizExplorer"),
   div(HTML("Adapted from a script developed by <a href='http://www.arilamstein.com'>Ari Lamstein</a>.")),
 
   sidebarLayout(

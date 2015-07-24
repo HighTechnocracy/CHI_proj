@@ -1,21 +1,23 @@
 # CHI_proj
-<i>Mapping the data from the CHI statewide worksheets</i>
+<i>Mapping the data from the CHI statewide workbooks</i>
 
 ###BACKGROUND
-In June 2015, the Colorado Health Initiative released an Excel document with several tabs, 64 tabs with data for each county in Colorado, one for the state, one with data sources, and an introductory sheet. The 65 sheets with county-level data and the one with state-level data recorded 43 variables from various sources. The idea was that these variables would help researchers and local public health officials spot "holes" in the delivery of healthcare across the state.
+In June 2015, the Colorado Health Institute (http://www.coloradohealthinstitute.org) released an Excel document with several tabs, 64 tabs with data for each county in Colorado, one for the state, one with data sources, and an introductory sheet. The 65 sheets with county-level data and the one with state-level data recorded 43 variables from various sources. The idea was that these variables would help researchers and local public health officials spot "holes" in the delivery of healthcare across the state.
 
 I found this data important and valuable but also difficult to use. I thought the data would be better if it was (1) all on one sheet so that comparisons could be made more readily and (2) able to be visualized, especially in map form.
 
 ###PURPOSE
-The purpose of this project is to create a Shiny app that will allow researchers and public health officials usefully visualize the data stored in the CHI worksheets. For the purposes of this course, I have chosen 6 of the 43 variables. If successful, my plan is to expand to the remaining variables. I will also eventually add a percentage calculation function and a side-by-side comparison function.
+The purpose of this project is to create a Shiny app that will allow researchers and public health officials to usefully visualize the data stored in the CHI worksheets. For the purposes of this course, I have chosen to create a Shiny app that allows the user to input two of the 43 CHI variables to more readily spot specific holes. For example, the user could display the number of nurse practitioners into the upper map and the number who have visited hospital emergency departments. The discrepancies in certain counties should stand out.
 
 ###VARIABLES
-The first six variables in the dataset (POP, PPSQM, LESS18, WA19_64, WCB15_44, MORE65) track population estimates. They are:
-* <b>POP</b> = <i>total population</i>
-* <b>PPSQM</b> = <i>population per square mile</i>
-* <b>LESS18</b> = <i>the population of children (i.e., less than 18 years old)</i>
-* <b>WA19_64</b> = <i>the "working age" population (i.e., 18-64 years old)</i>
-* <b>WCB15_44</b> = <i>number of women of child-bearing age (i.e., 15-44 years old)</i>
-* <b>MORE65</b> = <i>the number of individuals over the age of 65</i>
+The following 43 variables are potential options for visualization. The second column below lists CHI's data sources.
+Total population										Colorado Demography OfficePersons per square mile								Colorado Demography OfficeUnder 18 											Colorado Demography OfficeWorking age adults (19-64)							Colorado Demography OfficeFemales of child bearing age (15-44)						Colorado Demography Office65 and older										Colorado Demography OfficeTotal projected population 								Colorado Demography OfficeProjected Under 18 									Colorado Demography OfficeProjected Working age adults (19-64)					Colorado Demography OfficeProjected Females of child bearing age (15-44)				Colorado Demography OfficeProjected65 and older								Colorado Demography OfficeMedian household income 							American Community SurveyPopulation at or below the federal poverty line				American Community SurveyCommercially insured residents							American Community SurveyPublicly insured residents 
+(includes Medicare, Medicaid and Child Health Plan Plus)		American Community SurveyUninsured residents									American Community SurveyResidents with dental insurance*						Colorado Health Access SurveyMedicaid enrollment (2015)							Department of Health Care Policy and FinancingChange in Medicaid enrollees between 2014 and 2015		Department of Health Care Policy and FinancingChildren (20 and under) enrolled in Medicaid (2015)			Department of Health Care Policy and FinancingChildren eligible but not enrolled (EBNE) in Medicaid (2012)	American Community SurveyChildren enrolled in Child Health Plan Plus (2014)			Department of Health Care Policy and FinancingChildren eligible but not enrolled (EBNE) 
+in Child Health Plan Plus (2012)						Department of Health Care Policy and Financing/American Community SurveyPercentage of residents (18+) who have ever been told 
+they have cancer									Colorado Behavioral Risk Factor Surveillance SystemPercentage of residents (18+) who have ever been told 
+they have angina or coronary heart disease				Colorado Behavioral Risk Factor Surveillance SystemNurse practitioners									Department of Regulatory AgenciesRegistered nurses									Department of Regulatory AgenciesPhysician assistants									Department of Regulatory AgenciesDentists											Department of Regulatory AgenciesDental hygienists									Department of Regulatory AgenciesPsychologists										Department of Regulatory AgenciesClinical social workers								Department of Regulatory AgenciesPracticing physicians (2013)							Medical QuestPracticing primary care physicians (2013)					Medical QuestNumber of community health centers (FQHCs)				Safety Net DatabaseNumber of community mental health centers				Safety Net DatabaseNumber of community safety net clinics					Safety Net DatabaseNumber of rural health clinics							Safety Net DatabaseNumber of hospitals with an emergency department			Safety Net DatabaseNumber of designated health professional shortage areas		Health Resources and Services AdministrationVisited an emergency department						Colorado Health Access SurveyVisited a health care facility							Colorado Health Access SurveyVisited a dentist or dental hygienist						Colorado Health Access Survey
 
-All variables are given at the countly level, unless "Colorado" is chosen as the region, in which case the data is statewide.
+All variables are given at the county level, except for the final three (percentages of those that visited emergency departments, healthcare facilities, and dentists). Those are given by health region.
+
+##Acknowledgements
+The code was adapted from a Shiny tutorial on census visualizations (http://shiny.rstudio.com/tutorial/lesson5/) and from a census explorer developed by Ari Lamstein (http://www.arilamstein.com/blog/2015/07/09/new-tutorial-make-a-census-explorer/). The original data was aggregated by the Colorado Health Institute and is available here: http://www.coloradohealthinstitute.org/uploads/downloads/Website_Workbooks_7.8.xlsx
