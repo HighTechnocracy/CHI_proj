@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vizualizing Colorado's Public Health Data</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Vizualizing Colorado's Public Health Data">
+  <meta name="author" content="Jim Pavlik">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Vizualizing Colorado's Public Health Data</h1>
+    <h2>Colorado Health Institute County Data Workbooks</h2>
+    <p>Jim Pavlik<br/>Program and Policy Analyst, BHWP</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Background</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In July 2015, The Colorado Health  Institute released an Excel spreadsheet and accompanying brief. This spreadhsheet contained over 60 worksheets, each documenting over 50 variables for each of Colorado&#39;s 64 counties. </p>
+
+<p>The data contained in this spreadsheet could be a valuable tool for politicians, public health officials and researchers to spot gaps in the health outcomes and access to health services for Coloradans. But the format made it very difficult to use.</p>
+
+<p>So I used the Developing Data Products class as an excuse to see if I could not only make maps of this data, but do so in a moderately interactive way, allowing users, through Shiny, to make their own maps.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Developing an Idea</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>While maps alone would make the data easier to read and use, being able to compare the data against one another seemed even more useful.</p>
+
+<p>So I adapted some code developed by Ari Lamstein to display two maps. This would allow the curious to pit two of the variables against one another to spot gaps in nees vs access. For example, a user could put &quot;Number that Visisted a Dentist&quot; in the upper map and immediately compare it to &quot;Number of Dentists&quot; to see which dentists offices might be overloaded.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>By the Way:</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here is a chunk of R code that does something in order to satisfy this final assignment requirement.</p>
+
+<pre><code class="r">x &lt;- &quot;Hello World!&quot;
+x
+</code></pre>
+
+<pre><code>## [1] &quot;Hello World!&quot;
+</code></pre>
+
+<p>Well, &quot;Hello&quot; to you, chunk of R code. </p>
+
+<p>And good-bye to you, Peer Evaluator. I hope you like my app.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Background'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Developing an Idea'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='By the Way:'>
+         3
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
