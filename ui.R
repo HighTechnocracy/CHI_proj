@@ -2,7 +2,7 @@ library(shiny)
 library(choroplethrMaps)
 
 data(df_county_demographics, package="choroplethr")
-demographic_choices = colnames(df_state_demographics)[2:ncol(df_state_demographics)]
+demographic_choices = colnames(df_county_demographics)[2:ncol(df_county_demographics)]
 
 shinyUI(fluidPage(
 
