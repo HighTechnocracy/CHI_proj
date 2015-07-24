@@ -1,5 +1,5 @@
 shinyUI(fluidPage(
-        titlePanel("censusVis"),
+        titlePanel("Colorado Health Initiative Local Data Worksheet Viz Project"),
         
         sidebarLayout(
                 sidebarPanel(
@@ -26,7 +26,7 @@ shinyUI(fluidPage(
                                                  "Pitkin", "Prowers", "Pueblo", "Rio Blanco", "Rio Grande", 
                                                  "Routt", "Saguache", "San Juan", "San Miguel", "Sedgwick", 
                                                  "Summit", "Teller", "Washington", "Weld", "Yuma"),
-                                    selected = "COLORADO"
+                                    selected = "COLORADO")
                         ),
                 
                 mainPanel(plotOutput("map"))

@@ -2,7 +2,7 @@ library(choroplethr)
 library(choroplethrMaps)
 library(ggplot2)
 library(mapproj)
-counties <- read.csv("data/CHIdata2.csv")
+counties <- read.csv("CHI_proj/CHIdata2.csv")
 
 shinyServer(
         function(input, output) {
