@@ -1,5 +1,7 @@
 library(choroplethr)
 library(choroplethrMaps)
+library(ggplot2)
+library(mapproj)
 counties <- read.csv("data/CHIdata2.csv")
 
 shinyServer(
