@@ -1,5 +1,5 @@
 # CHI_proj
-<i>Mapping the data from the CHI statewide workbooks</i>
+<i>Mapping the data from the Colorado Health Institute County Data Workbooks</i>
 
 ###BACKGROUND
 In June 2015, the Colorado Health Institute (http://www.coloradohealthinstitute.org) released an Excel document with several tabs, 64 tabs with data for each county in Colorado, one for the state, one with data sources, and an introductory sheet. The 65 sheets with county-level data and the one with state-level data recorded 43 variables from various sources. The idea was that these variables would help researchers and local public health officials spot "holes" in the delivery of healthcare across the state. 
@@ -59,4 +59,4 @@ The following 43 variables are potential options for visualization. The second c
 All variables are given at the county level, except for the final three (percentages of those that visited emergency departments, healthcare facilities, and dentists). Those are given by health region.
 
 ##Acknowledgements
-The code was adapted from a Shiny tutorial on census visualizations (http://shiny.rstudio.com/tutorial/lesson5/) and from a census explorer developed by Ari Lamstein (http://www.arilamstein.com/blog/2015/07/09/new-tutorial-make-a-census-explorer/). The original data was aggregated by the Colorado Health Institute and is available here: http://www.coloradohealthinstitute.org/uploads/downloads/Website_Workbooks_7.8.xlsx
+The code was adapted from a Shiny tutorial on census visualizations (http://shiny.rstudio.com/tutorial/lesson5/) and from a census explorer developed by Ari Lamstein (http://www.arilamstein.com/blog/2015/07/09/new-tutorial-make-a-census-explorer/). The original data was aggregated by the Colorado Health Institute and is available here: http://www.coloradohealthinstitute.org/uploads/downloads/Website_Workbooks_7.8.xlsx. The mapping package was choroplethr 3.1.0: http://cran.r-project.org/web/packages/choroplethr/index.html
