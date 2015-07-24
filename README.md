@@ -11,22 +11,7 @@ The purpose of this project is to create a Shiny app that will allow researchers
 
 ###VARIABLES
 The following 43 variables are potential options for visualization. The second column below lists CHI's data sources.
- <table style="width:100%">
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-</table> 
-
-
-
-<table>
+<table style="width:100%">
 <tr><td>Total population</td><td>Colorado Demography Office</td></tr>
 <tr><td>Persons per square mile</td><td>Colorado Demography Office</td></tr>
 <tr><td>Under 18</td><td>Colorado Demography Office</td></tr>
