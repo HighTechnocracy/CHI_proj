@@ -2,7 +2,7 @@ library(choroplethr)
 library(choroplethrMaps)
 library(ggplot2)
 library(mapproj)
-counties <- read.csv("CHI_proj/CHIdata2.csv")
+counties <- read.csv("CHIdata2.csv")
 
 shinyServer(
         function(input, output) {
@@ -27,8 +27,8 @@ shinyServer(
                                          "Total Population" = "Total Population",
                                          "Population per sq.mi." = "Pop. per square mile",
                                          "Under 18" = "Population under age 18",
-                                         "Working Age" = "Working Age Pop. (18-64)"
-                                         "Women of Child-bearing Age" = "Number of Women of Child-Bearing Age, (15-44)"
+                                         "Working Age" = "Working Age Pop. (18-64)",
+                                         "Women of Child-bearing Age" = "Number of Women of Child-Bearing Age, (15-44)",
                                          "Over 65" = "Population over 65")
                         
                         percent_map(var = data, 

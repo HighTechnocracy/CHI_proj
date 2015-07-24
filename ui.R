@@ -15,7 +15,7 @@ shinyUI(fluidPage(
                                     label = "Region of interest:",
                                     choices = c("COLORADO", "Adams", "Alamosa", "Arapahoe", "Archuleta", 
                                                  "Baca", "Bent", "Boulder", "Broomfield", "Chaffee", 
-                                                 "Cheyenne", "Clear Creek", "Conejos”, “Costilla", 
+                                                 "Cheyenne", "Clear Creek", "Conejos", "Costilla", 
                                                  "Crowley", "Custer", "Delta", "Denver", "Dolores", 
                                                  "Douglas", "Eagle", "El Paso", "Elbert", "Fremont", 
                                                  "Garfield", "Gilpin", "Grand", "Gunnison", "Hinsdale", 
