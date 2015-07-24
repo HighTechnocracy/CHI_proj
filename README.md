@@ -11,12 +11,66 @@ The purpose of this project is to create a Shiny app that will allow researchers
 
 ###VARIABLES
 The following 43 variables are potential options for visualization. The second column below lists CHI's data sources.
-Total population										Colorado Demography OfficePersons per square mile								Colorado Demography OfficeUnder 18 											Colorado Demography OfficeWorking age adults (19-64)							Colorado Demography OfficeFemales of child bearing age (15-44)						Colorado Demography Office65 and older										Colorado Demography OfficeTotal projected population 								Colorado Demography OfficeProjected Under 18 									Colorado Demography OfficeProjected Working age adults (19-64)					Colorado Demography OfficeProjected Females of child bearing age (15-44)				Colorado Demography OfficeProjected65 and older								Colorado Demography OfficeMedian household income 							American Community SurveyPopulation at or below the federal poverty line				American Community SurveyCommercially insured residents							American Community SurveyPublicly insured residents 
-(includes Medicare, Medicaid and Child Health Plan Plus)		American Community SurveyUninsured residents									American Community SurveyResidents with dental insurance*						Colorado Health Access SurveyMedicaid enrollment (2015)							Department of Health Care Policy and FinancingChange in Medicaid enrollees between 2014 and 2015		Department of Health Care Policy and FinancingChildren (20 and under) enrolled in Medicaid (2015)			Department of Health Care Policy and FinancingChildren eligible but not enrolled (EBNE) in Medicaid (2012)	American Community SurveyChildren enrolled in Child Health Plan Plus (2014)			Department of Health Care Policy and FinancingChildren eligible but not enrolled (EBNE) 
-in Child Health Plan Plus (2012)						Department of Health Care Policy and Financing/American Community SurveyPercentage of residents (18+) who have ever been told 
-they have cancer									Colorado Behavioral Risk Factor Surveillance SystemPercentage of residents (18+) who have ever been told 
-they have angina or coronary heart disease				Colorado Behavioral Risk Factor Surveillance SystemNurse practitioners									Department of Regulatory AgenciesRegistered nurses									Department of Regulatory AgenciesPhysician assistants									Department of Regulatory AgenciesDentists											Department of Regulatory AgenciesDental hygienists									Department of Regulatory AgenciesPsychologists										Department of Regulatory AgenciesClinical social workers								Department of Regulatory AgenciesPracticing physicians (2013)							Medical QuestPracticing primary care physicians (2013)					Medical QuestNumber of community health centers (FQHCs)				Safety Net DatabaseNumber of community mental health centers				Safety Net DatabaseNumber of community safety net clinics					Safety Net DatabaseNumber of rural health clinics							Safety Net DatabaseNumber of hospitals with an emergency department			Safety Net DatabaseNumber of designated health professional shortage areas		Health Resources and Services AdministrationVisited an emergency department						Colorado Health Access SurveyVisited a health care facility							Colorado Health Access SurveyVisited a dentist or dental hygienist						Colorado Health Access Survey
+ <table style="width:100%">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table> 
 
+
+
+<table>
+<tr><td>Total population</td><td>Colorado Demography Office</td></tr>
+<tr><td>Persons per square mile</td><td>Colorado Demography Office</td></tr>
+<tr><td>Under 18</td><td>Colorado Demography Office</td></tr>
+<tr><td>Working age adults (19-64)</td><td>Colorado Demography Office</td></tr>
+<tr><td>Females of child bearing age (15-44)</td><td>Colorado Demography Office</td></tr>
+<tr><td>65 and older</td><td>Colorado Demography Office</td></tr>
+<tr><td>Total projected population </td><td>Colorado Demography Office</td></tr>
+<tr><td>Projected Under 18</td><td>Colorado Demography Office</td></tr>
+<tr><td>Projected Working age adults (19-64)</td><td>Colorado Demography Office</td></tr>
+<tr><td>Projected Females of child bearing age (15-44)</td><td>Colorado Demography Office</td></tr>
+<tr><td>Projected65 and older</td><td>Colorado Demography Office</td></tr>
+<tr><td>Median household income</td><td>American Community Survey</td></tr>
+<tr><td>Population at or below the federal poverty line</td><td>American Community Survey</td></tr>
+<tr><td>Commercially insured residents</td><td>American Community Survey</td></tr>
+<tr><td>Publicly insured residents (includes Medicare, Medicaid and Child Health Plan Plus)</td><td>American Community Survey</td></tr>
+<tr><td>Uninsured residents</td><td>American Community Survey</td></tr>
+<tr><td>Residents with dental insurance</td><td>Colorado Health Access Survey</td></tr>
+<tr><td>Medicaid enrollment (2015)</td><td>Department of Health Care Policy and Financing</td></tr>
+<tr><td>Change in Medicaid enrollees between 2014 and 2015</td><td>Department of Health Care Policy and Financing</td></tr>
+<tr><td>Children (20 and under) enrolled in Medicaid (2015)</td><td>Department of Health Care Policy and Financing</td></tr>
+<tr><td>Children eligible but not enrolled (EBNE) in Medicaid (2012)</td><td>American Community Survey</td></tr>
+<tr><td>Children enrolled in Child Health Plan Plus (2014)</td><td>Department of Health Care Policy and Financing</td></tr>
+<tr><td>Children eligible but not enrolled (EBNE) in Child Health Plan Plus (2012)</td><td>Department of Health Care Policy and Financing/American Community Survey</td></tr>
+<tr><td>Percentage of residents (18+) who have ever been told they have cancer</td><td>Colorado Behavioral Risk Factor Surveillance System</td></tr>
+<tr><td>Percentage of residents (18+) who have ever been told they have angina or coronary heart disease</td><td>Colorado Behavioral Risk Factor Surveillance System</td></tr>
+<tr><td>Nurse practitioners</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Registered nurses</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Physician assistants</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Dentists</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Dental hygienists</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Psychologists</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Clinical social workers</td><td>Department of Regulatory Agencies</td></tr>
+<tr><td>Practicing physicians (2013)</td><td>Medical Quest</td></tr>
+<tr><td>Practicing primary care physicians (2013)</td><td>Medical Quest</td></tr>
+<tr><td>Number of community health centers (FQHCs)</td><td>Safety Net Database</td></tr>
+<tr><td>Number of community mental health centers</td><td>Safety Net Database</td></tr>
+<tr><td>Number of community safety net clinics</td><td>Safety Net Database</td></tr>
+<tr><td>Number of rural health clinics</td><td>Safety Net Database</td></tr>
+<tr><td>Number of hospitals with an emergency department</td><td>Safety Net Database</td></tr>
+<tr><td>Number of designated health professional shortage areas</td><td>Health Resources and Services Administration</td></tr>
+<tr><td>Visited an emergency department</td><td>Colorado Health Access Survey</td></tr>
+<tr><td>Visited a health care facility</td><td>Colorado Health Access Survey</td></tr>
+<tr><td>Visited a dentist or dental hygienist</td><td>Colorado Health Access Survey</td></tr>
+</table>
 All variables are given at the county level, except for the final three (percentages of those that visited emergency departments, healthcare facilities, and dentists). Those are given by health region.
 
 ##Acknowledgements
