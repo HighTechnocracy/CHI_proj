@@ -58,5 +58,7 @@ The following 43 variables are potential options for visualization. The second c
 </table>
 All variables are given at the county level, except for the final three (percentages of those that visited emergency departments, healthcare facilities, and dentists). Those are given by health region.
 
+Instruction on how to use the app can be found in the HOWTO.md file.
+
 ##Acknowledgements
 The code was adapted from a Shiny tutorial on census visualizations (http://shiny.rstudio.com/tutorial/lesson5/) and from a census explorer developed by Ari Lamstein (http://www.arilamstein.com/blog/2015/07/09/new-tutorial-make-a-census-explorer/). The original data was aggregated by the Colorado Health Institute and is available here: http://www.coloradohealthinstitute.org/uploads/downloads/Website_Workbooks_7.8.xlsx. The mapping package was choroplethr 3.1.0: http://cran.r-project.org/web/packages/choroplethr/index.html
