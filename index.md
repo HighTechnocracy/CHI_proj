@@ -25,7 +25,7 @@ So I used the Developing Data Products class as an excuse to see if I could not 
 
 While maps alone would make the data easier to read and use, being able to compare the data against one another seemed even more useful.
 
-So I adapted some code developed by Ari Lamstein to display two maps. This would allow the curious to pit two of the variables against one another to spot gaps in nees vs access. For example, a user could put "Number that Visisted a Dentist" in the upper map and immediately compare it to "Number of Dentists" to see which dentists offices might be overloaded.
+So I adapted some code developed by Ari Lamstein to display two maps. This would allow the curious to pit two of the variables against one another to spot gaps in needs vs access. For example, a user could put "Number that Visisted a Dentist" in the upper map and immediately compare it to "Number of Dentists" to see which dentists offices might be overloaded.
 
 --- .class #id 
 
